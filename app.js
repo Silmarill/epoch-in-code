@@ -6,19 +6,35 @@ const tableBody = document.querySelector("#project-grid");
 const search = document.querySelector("#search");
 const count = document.querySelector("#work-count");
 const emptyState = document.querySelector("#empty-state");
-let localChoice = localStorage.getItem(VOTE_STORAGE_KEY) || "";
 const rows = Array.from(tableBody.querySelectorAll(".project-row"));
+const savedChoices = localStorage.getItem(VOTE_STORAGE_KEY) || "";
+let localChoices = new Set();
+if (savedChoices) {
+  try {
+    const parsed = JSON.parse(savedChoices);
+    localChoices = new Set(Array.isArray(parsed) ? parsed.map(String) : [savedChoices]);
+  } catch (_) {
+    // Migrate the earlier single-project value to the new list format.
+    localChoices = new Set([savedChoices]);
+  }
+}
+
+function saveChoices() {
+  if (localChoices.size) localStorage.setItem(VOTE_STORAGE_KEY, JSON.stringify([...localChoices]));
+  else localStorage.removeItem(VOTE_STORAGE_KEY);
+}
 
 function updateChoice() {
   rows.forEach(row => {
     const id = row.dataset.projectId;
-    const selected = id === localChoice;
+    const selected = localChoices.has(id);
     const button = row.querySelector(".like-button");
     row.classList.toggle("is-liked", selected);
     button.classList.toggle("liked", selected);
     button.setAttribute("aria-pressed", String(selected));
     button.querySelector(".heart").textContent = selected ? "♥" : "♡";
     button.disabled = !VOTE_API_URL;
+    button.title = VOTE_API_URL ? (selected ? "Снять лайк" : "Поставить лайк") : "Подключите таблицу для голосования";
   });
 }
 function filterRows() {
@@ -42,13 +58,13 @@ function getVoterToken() {
   return token;
 }
 function postVote(projectId, action) {
-  fetch(VOTE_API_URL, {
+  return fetch(VOTE_API_URL, {
     method: "POST",
     mode: "no-cors",
     cache: "no-store",
     headers: { "Content-Type": "text/plain;charset=UTF-8" },
     body: JSON.stringify({ voter_token: getVoterToken(), project_id: projectId, action })
-  }).catch(() => {});
+  }).catch(() => {}).finally(() => setTimeout(loadCounts, 250));
 }
 function loadCounts() {
   if (!VOTE_API_URL) return;
@@ -73,13 +89,18 @@ tableBody.addEventListener("click", event => {
   const button = event.target.closest("[data-vote]");
   if (!button || button.disabled || !VOTE_API_URL) return;
   const projectId = button.dataset.vote;
-  const action = localChoice === projectId ? "remove" : "vote";
-  localChoice = action === "remove" ? "" : projectId;
-  if (localChoice) localStorage.setItem(VOTE_STORAGE_KEY, localChoice);
-  else localStorage.removeItem(VOTE_STORAGE_KEY);
+  const action = localChoices.has(projectId) ? "remove" : "vote";
+  const projectRow = button.closest(".project-row");
+  const displayedCount = projectRow.querySelector(".like-count");
+  const currentCount = Number(displayedCount.textContent);
+  if (Number.isFinite(currentCount)) {
+    displayedCount.textContent = String(Math.max(0, currentCount + (action === "vote" ? 1 : -1)));
+  }
+  if (action === "remove") localChoices.delete(projectId);
+  else localChoices.add(projectId);
+  saveChoices();
   updateChoice();
   postVote(projectId, action);
-  setTimeout(loadCounts, 700);
 });
 
 updateChoice();
