@@ -1,0 +1,218 @@
+[
+  {
+    "id": "49671",
+    "author": "Альвина В.",
+    "title": "Основы алгоритмического языка ФОРТРАН для научных работников — Межведомственный Вычислительный Центр",
+    "repo": "https://github.com/avit228/-/tree/develop",
+    "site": "https://avit228.github.io/-/",
+    "attachment": null,
+    "topic": "FORTRAN"
+  },
+  {
+    "id": "49672",
+    "author": "Роман Г.",
+    "title": "Школа Алгола — ALGOL 60",
+    "repo": "https://github.com/YugenPrime7/labworkrework",
+    "site": "https://yugenprime7.github.io/labworkrework/",
+    "attachment": null,
+    "topic": "ALGOL 60"
+  },
+  {
+    "id": "49673",
+    "author": "Анастасия Г.",
+    "title": "Язык для мыслящих машин — Лаборатория символьных вычислений",
+    "repo": "https://github.com/gorbunova0888/lisp-era-project",
+    "site": "https://gorbunova0888.github.io/lisp-era-project/",
+    "attachment": null,
+    "topic": "LISP"
+  },
+  {
+    "id": "36716",
+    "author": "Ксения И.",
+    "title": "Институт стековой инженерии — Курс FORTH",
+    "repo": "https://github.com/kseniaIvanova0/forth-project",
+    "site": "https://kseniaivanova0.github.io/forth-project/",
+    "attachment": null,
+    "topic": "FORTH"
+  },
+  {
+    "id": "36837",
+    "author": "Фёдор К.",
+    "title": "Турбо-курс программирования на Pascal",
+    "repo": "https://github.com/meatelkabes/languagePascal",
+    "site": "https://meatelkabes.github.io/languagePascal/",
+    "attachment": null,
+    "topic": "PASCAL"
+  },
+  {
+    "id": "49675",
+    "author": "Кирилл К.",
+    "title": "Язык, который описывает языки — Курсы по ALGOL 60",
+    "repo": "https://github.com/Kilcelsnpl2/labakruto2.0",
+    "site": "https://kilcelsnpl2.github.io/labakruto2.0/",
+    "attachment": null,
+    "topic": "ALGOL 60"
+  },
+  {
+    "id": "49676",
+    "author": "Дмитрий К.",
+    "title": "C++ — язык системного программирования",
+    "repo": null,
+    "site": "https://snauperda.github.io/website-for-CPP/",
+    "attachment": null,
+    "topic": "C++"
+  },
+  {
+    "id": "36724",
+    "author": "Мария К.",
+    "title": "DataLine — SQL: Язык, который понимают все машины",
+    "repo": "https://github.com/kohetana/sikret1",
+    "site": "https://kohetana.github.io/sikret1/",
+    "attachment": null,
+    "topic": "SQL"
+  },
+  {
+    "id": "49677",
+    "author": "Даниил Л.",
+    "title": "Турбо-Алгоритм — курсы Pascal",
+    "repo": "https://github.com/dli871037-lab/cautious-palm-tree",
+    "site": "https://dli871037-lab.github.io/",
+    "attachment": null,
+    "topic": "PASCAL"
+  },
+  {
+    "id": "49678",
+    "author": "Владислав Л.",
+    "title": "Из экрана — в тираж · Школа «Набор-86»",
+    "repo": "https://github.com/Lutsik-prog/PostScript_Lutsaev_variant-15",
+    "site": "https://lutsik-prog.github.io/PostScript_Lutsaev_variant-15/",
+    "attachment": null,
+    "topic": "POSTSCRIPT"
+  },
+  {
+    "id": "49679",
+    "author": "София Л.",
+    "title": "Назад к Черепашке: Программируй как в начале 1980-х!",
+    "repo": "https://github.com/sofi-luch/algoritmONE1",
+    "site": "https://sofi-luch.github.io/algoritmONE1/",
+    "attachment": null,
+    "topic": "LOGO"
+  },
+  {
+    "id": "50138",
+    "author": "Даниил М.",
+    "title": "Perl 5: Скотч для вашего интернета!!! — Верблюжья мастерская",
+    "repo": "https://github.com/Shadow-Yato/Yato/tree/perl-project",
+    "site": "https://shadow-yato.github.io/Yato/",
+    "attachment": null,
+    "topic": "PERL 5"
+  },
+  {
+    "id": "49680",
+    "author": "Артём М.",
+    "title": "Лаборатория Символических Вычислений — Lisp и символьные вычисления",
+    "repo": "https://github.com/Artem55545/language-era-project",
+    "site": "https://artem55545.github.io/language-era-project/",
+    "attachment": null,
+    "topic": "LISP"
+  },
+  {
+    "id": "49682",
+    "author": "Александр М.",
+    "title": "Rust: не падает — курс системного программирования FERRIS LAB",
+    "repo": "https://github.com/Masorv/RustWontFall",
+    "site": "https://masorv.github.io/RustWontFall/",
+    "attachment": null,
+    "topic": "RUST"
+  },
+  {
+    "id": "49684",
+    "author": "Софья П.",
+    "title": "Delphi — программы для Windows за один курс | Учебный центр «Новый курс»",
+    "repo": "https://github.com/sofiapltnva-glitch/ProgrammingLanguagesDelphi",
+    "site": "https://sofiapltnva-glitch.github.io/ProgrammingLanguagesDelphi/",
+    "attachment": null,
+    "topic": "DELPHI"
+  },
+  {
+    "id": "49687",
+    "author": "Владислав П.",
+    "title": "Язык C: Unix, переносимость, системное программирование",
+    "repo": "https://github.com/PigeonUSSR/SecretLab",
+    "site": "https://pigeonussr.github.io/SecretLab/",
+    "attachment": null,
+    "topic": "C"
+  },
+  {
+    "id": "49689",
+    "author": "Михаил Р.",
+    "title": "Visual Basic 6.0 — курсы 1998",
+    "repo": "https://github.com/mihara-dot/-_-_--261_--21_Visual-Basic",
+    "site": "https://mihara-dot.github.io/-_-_--261_--21_Visual-Basic/",
+    "attachment": null,
+    "topic": "VISUAL BASIC"
+  },
+  {
+    "id": "36847",
+    "author": "Ильнур С.",
+    "title": "PythonWare: язык для тех, кто хочет делать больше",
+    "repo": "https://github.com/hokytoky/language-era-project-laboratory-work-secret",
+    "site": "https://hokytoky.github.io/language-era-project-laboratory-work-secret/",
+    "attachment": null,
+    "topic": "PYTHON"
+  },
+  {
+    "id": "49690",
+    "author": "Владимир С.",
+    "title": "SMALLTALK LABORATORY — Programming the Personal Computer",
+    "repo": "https://github.com/marginal23/E228KH-",
+    "site": "https://marginal23.github.io/E228KH-/",
+    "attachment": null,
+    "topic": "SMALLTALK"
+  },
+  {
+    "id": "49691",
+    "author": "Ангелина Т.",
+    "title": "C# — курс программирования | 2002–2006",
+    "repo": "https://github.com/Bublik961/csharp",
+    "site": "https://bublik961.github.io/csharp/",
+    "attachment": null,
+    "topic": "C#"
+  },
+  {
+    "id": "49692",
+    "author": "Кирилл Х.",
+    "title": "Своя игра с нуля — курсы Lua для Dota 2",
+    "repo": "https://github.com/andreyimmersion209-lab/language-era-project",
+    "site": "https://andreyimmersion209-lab.github.io/language-era-project/",
+    "attachment": null,
+    "topic": "LUA"
+  },
+  {
+    "id": "49693",
+    "author": "Михаил Х.",
+    "title": "Turbo Pascal — от хаоса к порядку",
+    "repo": null,
+    "site": null,
+    "attachment": "https://api-next.kemsu.ru/api/storage/uspev/solve/49693.874b3c70-bc26-11f1-ab37-bb6aecec3eb2.DokumentMicrosoftWord.docx",
+    "topic": "PASCAL"
+  },
+  {
+    "id": "39001",
+    "author": "Артем Ч.",
+    "title": "Разработка мультимедийных Flash-приложений на ActionScript",
+    "repo": "https://github.com/Artem4upin/language-era-project",
+    "site": "https://artem4upin.github.io/language-era-project/",
+    "attachment": null,
+    "topic": "ACTIONSCRIPT"
+  },
+  {
+    "id": "49695",
+    "author": "Александр Ш.",
+    "title": "Gopher Lab — Go: серверы без лишней суеты",
+    "repo": "https://github.com/shaminalexander/Go-35V/tree/main",
+    "site": "https://shaminalexander.github.io/Go-35V/",
+    "attachment": null,
+    "topic": "GO"
+  }
+]
